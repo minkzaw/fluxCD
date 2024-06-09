@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: assistant-api
+  name: assistant-api
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: assistant-api
+  template:
+    metadata:
+      labels:
+        app: assistant-api
+    spec:
+      containers:
+      - image: docker.io/mkzaw/assistant-api:2024060918
+        name: assistant-api
+        - containerPort: 9000
