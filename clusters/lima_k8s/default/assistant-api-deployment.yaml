@@ -17,5 +17,5 @@ spec:
         app: assistant-api
     spec:
       containers:
-      - image: docker.io/mkzaw/assistant-api:2024060914
+      - image: docker.io/mkzaw/assistant-api:2024060918
         name: assistant-api
