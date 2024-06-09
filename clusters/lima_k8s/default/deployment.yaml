@@ -5,20 +5,17 @@ metadata:
   labels:
     app: assistant-api
   name: assistant-api
+  namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: assistant-api
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: assistant-api
     spec:
       containers:
       - image: docker.io/mkzaw/assistant-api:2024060914
         name: assistant-api
-        resources: {}
-status: {}
