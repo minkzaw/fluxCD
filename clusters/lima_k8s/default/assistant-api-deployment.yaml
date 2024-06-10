@@ -17,7 +17,7 @@ spec:
         app: assistant-api
     spec:
       containers:
-      - image: docker.io/mkzaw/assistant-api:202406101458
+      - image: docker.io/mkzaw/assistant-api:202406101503
         name: assistant-api
         ports:
         - containerPort: 8080
